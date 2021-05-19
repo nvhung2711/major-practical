@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 class PersonalDetails
@@ -28,7 +29,7 @@ public:
         Secret_answer = secret_answer;
         Age = age;
         Annual_income = annual_income;
-    }
+    };
     // full name getter method
     string getFullName();
     // username getter method
