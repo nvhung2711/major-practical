@@ -1,0 +1,15 @@
+Hello there! What would you like to do?
+Enter the option:
+1.) Create User
+2.) Exit
+Your full name:
+Your phone number:
+Your email:
+Your secret question (this will be used to reset your password):
+Your secret answer:
+Your age:
+Your annual income (this will determine if you can take out loans or not):
+Your username:
+Your password:
+Confirm password:
+Made a mistake?(y/n):
