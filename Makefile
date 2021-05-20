@@ -14,4 +14,4 @@ UserAccounts.o: UserAccounts.cpp UserAccounts.h
 	clang++ -c UserAccounts.cpp 
 
 clean:
-	rm -rf *.o 
+	rm -rf *.o main
