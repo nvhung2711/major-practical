@@ -6,6 +6,7 @@
 #include <string>
 using namespace std;
 
+// FUNCTION DEFINITIONS
 // vector array to store everyone's personal details
 vector<PersonalDetails> personalDetailsVector;
 
@@ -21,11 +22,17 @@ void mainscreen();
 // create user functionality. see function for details.
 void createUser();
 
+// MAIN FUNCTION
 int main()
 {
     // initial log in UI function called.
     mainscreen();
 
+    // print out users for debugging purposes. it works.
+    // for (int i = 0; i < personalDetailsVector.size(); i++)
+    // {
+    //     cout << personalDetailsVector[i].getFullName() << endl;
+    // }
     return 0;
 }
 
@@ -106,9 +113,12 @@ void createUser()
     {
         for (int i = 0; i < 11; i++)
         {
-            // # TODO: add input sanitation and check if username is taken
+            // # IF WE GET MORE TIME: add input sanitation
+            // # TODO: check if username is taken
+            // I think the way we are reading the string is
+            // causing issues with the testing text file
             cout << questionaire[i] << endl;
-            cin.ignore(1, '\n');
+            cin.ignore(1);
             getline(cin, questionaire_answers[i]);
         }
     } while (questionaire_answers[10] == "y");
@@ -118,9 +128,11 @@ void createUser()
     while (questionaire_answers[8] != questionaire_answers[9])
     {
         cout << "Your passwords don't match. Please enter them again: " << endl;
-        cin >> questionaire_answers[8];
+        cin.ignore(1, '\n');
+        getline(cin, questionaire_answers[8]);
         cout << "Confirm password: " << endl;
-        cin >> questionaire_answers[9];
+        cin.ignore(1, '\n');
+        getline(cin, questionaire_answers[9]);
     }
 
     // A message to the user saying user is saved.

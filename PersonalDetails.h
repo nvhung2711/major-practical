@@ -2,6 +2,9 @@
 #include <string>
 using namespace std;
 
+#ifndef PERSONAL_DETAILS_
+#define PERSONAL_DETAILS_
+
 class PersonalDetails
 {
 private:
@@ -49,3 +52,5 @@ public:
     // annual income getter method
     int getAnnualIncome();
 };
+
+#endif
