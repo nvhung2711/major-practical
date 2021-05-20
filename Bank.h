@@ -25,7 +25,7 @@ public:
         // returns the number of accounts in the bank
 
         int get_current_number_of_accounts();
-        // returns the array of members of the orchestra
+        // returns the array of members of the Bank 
         
         UserAccount* get_members();
         // Adds a user account
