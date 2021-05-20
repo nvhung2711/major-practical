@@ -14,7 +14,7 @@ private:
         int balance;
         int size;
         int max_size;
-        UserAccounts*members;
+        UserAccount*members;
 
 public:
 // default constructor
@@ -26,8 +26,8 @@ public:
 
         int get_current_number_of_accounts();
         // returns the array of members of the orchestra
-
-        Bank* get_members();
+        
+        UserAccount* get_members();
         // Adds a user account
         bool add_Account(UserAccount new_UserAccount);
         // Th transfer balanace
